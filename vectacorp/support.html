@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to Vecta Corp.</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/layout.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="js/jquery.mobilemenu.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('#responsive-menu').mobileMenu();
-		});
-	</script>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to Vecta Corp.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script> 
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!--UI-->
+	
+		<script>
+			$(document).ready(function () {
+				$('#responsive-menu').mobileMenu();
+				$(document).tooltip(); //Tooltip
+			});
+		</script>
+	</head>
 <body>
 	<main class="container">
 		<figure class="three columns">
@@ -28,11 +32,11 @@
 		
 		<nav class="thirteen columns">
 			<ul id="responsive-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="solutions.html">Solutions</a></li>
-				<li><a href="support.html">Support</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="index.html" title="Welcome to our Vectacorp homepage!">Home</a></li>
+				<li><a href="aboutus.html" title="Find out more about us!">About Us</a></li>
+				<li><a href="solutions.html" title="Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers.">Solutions</a></li>
+				<li><a href="support.html" title="Efficient support at a click of a button!">Support</a></li>
+				<li><a href="contactus.html" title="We're here to help!">Contact Us</a></li>
 			</ul>
 		</nav>
 		
